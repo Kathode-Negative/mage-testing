@@ -1,7 +1,9 @@
+// attach to player-rig
+import { setup } from "./setup"
 
-
-class PlayerHealth extends CapElement {
+export class PlayerHealth extends CapElement {
     init() {
+        setup()
         console.log('[PlayerHealth] init')
 
         this.health = 100
@@ -177,5 +179,3 @@ class PlayerHealth extends CapElement {
         }
     }
 }
-
-export default PlayerHealth
